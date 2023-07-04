@@ -16,7 +16,7 @@ class MemberTest {
 
     @Test
     @DisplayName("회원은 닉네임을 변경할 수 있다.")
-    public void testChangeName(){
+    void testChangeName(){
 //        LongStream.range(0, 10)
 //                .mapToObj(i -> MemberFixFactory.create(i))
 //                .forEach(member -> {
@@ -32,7 +32,7 @@ class MemberTest {
 
     @Test
     @DisplayName("회원의 닉네임은 10자를 초과할 수 없다.")
-    public void testNicknameMaxLength(){
+    void testNicknameMaxLength(){
         var member = MemberFixFactory.create();
         var maxLengthName = "pnupnupnupnu";
 
