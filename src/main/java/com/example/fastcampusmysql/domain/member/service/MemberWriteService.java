@@ -24,7 +24,7 @@ public class MemberWriteService {
                 .build();
 
         var savedMember = memberRepository.save(member);
-        saveMemberNicknameHistory(member);
+        saveMemberNicknameHistory(savedMember);
         return savedMember;
     }
 
